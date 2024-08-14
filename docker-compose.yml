@@ -68,7 +68,7 @@ services:
     build:
       context: ./nginx
       dockerfile: Dockerfile
-    container_name: "nginx"
+    container_name: "yolo-nginx"
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/conf.d/nginx.conf
       - nginx_frontend_static_volume:/usr/share/nginx/html
