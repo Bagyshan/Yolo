@@ -1,0 +1,14 @@
+django
+djangorestframework
+psycopg2-binary
+celery
+rabbitmq
+redis
+drf-yasg
+python-decouple
+gunicorn
+django-cors-headers
+django-redis
+django-jazzmin
+celery[redis]
+django-celery-results
