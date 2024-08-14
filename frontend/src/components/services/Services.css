@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Rubik:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+.services-container {
+  padding: 50px 70px;
+  font-family: 'Montserrat', 'Rubik', 'Ubuntu', sans-serif;
+}
+
+.services-container h1 {
+  text-align: center;
+  margin-bottom: 100px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 90px;
+}
+
+.service-item {
+  display: flex;
+  align-items: flex-start;
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover,
+.service-item:active {
+  transform: scale(1.05);
+}
+
+.service-item img {
+  width: 115px;
+  height: 115px;
+  margin-right: 20px;
+}
+
+.service-item h4 {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.service-item p {
+  margin: 5px 0 0 0;
+  font-size: 0.86rem;
+  font-weight: 400;
+}
+
+/* Адаптивная верстка */
+@media (max-width: 1200px) {
+  .services-container {
+    padding: 40px 50px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 60px;
+  }
+
+  .services-container h1 {
+    margin-bottom: 80px;
+    font-size: 1.75rem;
+  }
+
+  .service-item img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .service-item h4 {
+    font-size: 1.075rem;
+  }
+
+  .service-item p {
+    font-size: 0.82rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .services-container {
+    padding: 30px 40px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+  }
+
+  .services-container h1 {
+    margin-bottom: 70px;
+    font-size: 1.625rem;
+  }
+
+  .service-item img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .service-item h4 {
+    font-size: 1.05rem;
+  }
+
+  .service-item p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-container {
+    padding: 20px 30px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+
+  .services-container h1 {
+    margin-bottom: 60px;
+    font-size: 1.5rem;
+  }
+
+  .service-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .service-item img {
+    margin-right: 0;
+    margin-bottom: 15px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .service-item h4 {
+    font-size: 1rem;
+  }
+
+  .service-item p {
+    font-size: 0.78rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .services-container {
+    padding: 15px 20px;
+  }
+
+  .services-container h1 {
+    margin-bottom: 50px;
+    font-size: 1.375rem;
+  }
+
+  .service-item img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .service-item h4 {
+    font-size: 0.95rem;
+  }
+
+  .service-item p {
+    font-size: 0.75rem;
+  }
+}
