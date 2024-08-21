@@ -17,9 +17,9 @@ const Navbar = () => {
       <div className="navbar-top">
         <h1 className="navbar-title" onClick={() => handleNavigate('/')}>Yolo</h1>
         <div className="navbar-right">
-          <a href='https://web.telegram.org/' className="socialIcon"><img src={telegram} alt="telegram icon" className="social-icon"/></a>
+          <a href='https://t.me/manager_temir' className="socialIcon"><img src={telegram} alt="telegram icon" className="social-icon"/></a>
           <a href='https://web.whatsapp.com/' className="socialIcon"><img src={whatsapp} alt="whatsapp icon" className="social-icon"/></a>
-          <a href='https://dzen.ru' className="socialIcon"><img src={yandexzen} alt="yandex zen icon" className="social-icon"/></a>
+          <a href='https://dzen.ru/yolokg' className="socialIcon"><img src={yandexzen} alt="yandex zen icon" className="social-icon"/></a>
         </div>
       </div>
     </div>
