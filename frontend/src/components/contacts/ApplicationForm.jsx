@@ -8,7 +8,7 @@ const ApplicationForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    messenger:'',
+    messanger:'',
     content: '',
   });
   const {loading} = useSelector((state) => state.api)
@@ -19,17 +19,12 @@ const ApplicationForm = () => {
 
   const handleSubmit = async(e) => {
     e.preventDefault();
-    const formDataToSend = new FormData();
-    formDataToSend.append('name', formData.name);
-    formDataToSend.append('email', formData.email);
-    formDataToSend.append('messenger', formData.messenger);
-    formDataToSend.append('content', formData.content);
-    await dispatch(postApplication(formDataToSend));
+    await dispatch(postApplication(formData));
     alert("Заявка отправлена.")
     setFormData({
         name: '',
         email: '',
-        messenger: '',
+        messanger: '',
         content: '',
     })
   };
@@ -57,9 +52,9 @@ const ApplicationForm = () => {
           />
           <input
             type="text"
-            name="messenger"
+            name="messanger"
             placeholder="Номер WhatsApp"
-            value={formData.messenger}
+            value={formData.messanger}
             onChange={handleChange}
             required
           />
