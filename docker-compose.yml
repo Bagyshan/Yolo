@@ -82,25 +82,25 @@ services:
 
 
 
-  # frontend:
-  #   build:
-  #     context: ./frontend
-  #     dockerfile: Dockerfile
-  #   restart: on-failure
-  #   ports:
-  #     - "3000:80"
-  #   container_name: "frontend"
-  #   volumes:
-  #     - ./frontend/default.conf:/etc/nginx/conf.d/default.conf
-  #     - front_static_volume:/usr/src/app/static
-  #     - static_volume:/usr/src/app/api/static
-  #   environment:
-  #     - NODE_ENV=production
-  #     - REACT_APP_API_URL=http://nginx/api/
-  #   depends_on:
-  #     - backend
-  #   networks:
-  #     - backend
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    restart: on-failure
+    ports:
+      - "3000:80"
+    container_name: "frontend"
+    volumes:
+      - ./frontend/default.conf:/etc/nginx/conf.d/default.conf
+      - front_static_volume:/usr/src/app/static
+      - static_volume:/usr/src/app/api/static
+    environment:
+      - NODE_ENV=production
+      - REACT_APP_API_URL=http://nginx/api/
+    depends_on:
+      - backend
+    networks:
+      - backend
 
 
 
