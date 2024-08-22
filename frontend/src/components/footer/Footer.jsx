@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="contact-section">
           <div className="icons-section">
           <a href='https://t.me/manager_temir' className="socialIcon"><img src={telegram} alt="telegram icon" className="social-icon"/></a>
-          <a href='https://web.whatsapp.com/' className="socialIcon"><img src={whatsapp} alt="whatsapp icon" className="social-icon"/></a>
+          <a href='http://wa.me/996702930787' className="socialIcon"><img src={whatsapp} alt="whatsapp icon" className="social-icon"/></a>
           <a href='https://dzen.ru/yolokg' className="socialIcon"><img src={yandexzen} alt="yandex zen icon" className="social-icon"/></a>
           </div>
         </div>
