@@ -18,7 +18,7 @@ def send_application(application_id):
     messanger = application.messanger
 
     subject = 'Уведомление о новой заявке'
-    message = f'{name} оставил заявку на услуги Кыргызгеологии\n\nТекст заявки: "{application.content}"\n\nЕго email: "{email}"\nЕго номер: "{messanger}"'
+    message = f'{name} оставил заявку\n\nТекст заявки: "{application.content}"\n\nЕго email: "{email}"\nЕго номер: "{messanger}"'
     from_email = sanitize_email('bagishan040401@yandex.ru')
     recipient_list = [sanitize_email('bagishan01@gmail.com')]
 
